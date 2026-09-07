@@ -1,0 +1,38 @@
+export const rbacConfig = {
+  roles: {
+    owner: { label: "Owner", description: "Full control, including security and collectors." },
+    itam_admin: { label: "ITAM Admin", description: "Manages inventory, licenses, contracts, and access." },
+    asset_manager: { label: "Asset Manager", description: "Owns asset lifecycle and assignments." },
+    auditor: { label: "Auditor", description: "Reads evidence, history, and license position." },
+    technician: { label: "Technician", description: "Updates assigned hardware and discovery issues." },
+    viewer: { label: "Viewer", description: "Read-only inventory access." },
+  },
+  permissions: {
+    "dashboard.view": "View estate dashboard",
+    "assets.view": "Search assets and historical state",
+    "assets.manage": "Update asset lifecycle and assignment",
+    "licenses.view": "View entitlements and effective license position",
+    "licenses.manage": "Manage entitlements and reconciliation rules",
+    "contracts.manage": "Manage contracts, evidence, and renewals",
+    "discovery.manage": "Manage collectors and cloud inventory sources",
+    "assistant.ask": "Ask the estate analyst",
+    "access.manage": "Configure roles and identity mappings",
+    "exports.create": "Export evidence-grade datasets",
+  },
+  rolePermissions: {
+    owner: ["*"],
+    itam_admin: ["*"],
+    asset_manager: ["dashboard.view", "assets.view", "assets.manage", "licenses.view", "contracts.manage", "assistant.ask", "exports.create"],
+    auditor: ["dashboard.view", "assets.view", "licenses.view", "assistant.ask", "exports.create"],
+    technician: ["dashboard.view", "assets.view", "assets.manage"],
+    viewer: ["dashboard.view", "assets.view"],
+  } as Record<string, readonly string[]>,
+  identityGroupMappings: {
+    "roster-owners": "owner",
+    "itam-administrators": "itam_admin",
+    "asset-management": "asset_manager",
+    "software-audit": "auditor",
+    "service-desk": "technician",
+  } as Record<string, string>,
+  defaultRole: "viewer",
+};

@@ -1,0 +1,29 @@
+{
+  "realm": "roster",
+  "enabled": true,
+  "displayName": "Roster local identity broker",
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "clients": [
+    {
+      "clientId": "roster-web",
+      "name": "Roster Web",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "local-dev-secret",
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": false,
+      "redirectUris": ["http://localhost:3000/api/auth/callback/enterprise-sso"],
+      "webOrigins": ["http://localhost:3000"],
+      "protocol": "openid-connect",
+      "defaultClientScopes": ["web-origins", "acr", "roles", "profile", "email", "groups"]
+    }
+  ],
+  "groups": [
+    { "name": "roster-owners" },
+    { "name": "itam-administrators" },
+    { "name": "asset-management" },
+    { "name": "software-audit" },
+    { "name": "service-desk" }
+  ]
+}
