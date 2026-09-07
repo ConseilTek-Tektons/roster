@@ -3,6 +3,19 @@
   "version": "0.2.0",
   "private": true,
   "description": "Self-hosted IT asset and license management with enterprise SSO, RBAC, and AI-assisted reconciliation.",
+  "author": {
+    "name": "ConseilTek",
+    "email": "support@conseiltek.com",
+    "url": "https://conseiltek.com"
+  },
+  "homepage": "https://conseiltek.com/techtons/roster",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConseilTek-Tektons/roster.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ConseilTek-Tektons/roster/issues"
+  },
   "license": "Apache-2.0",
   "engines": {
     "node": ">=22.0.0"

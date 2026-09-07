@@ -9,7 +9,9 @@
 [![CodeQL](https://github.com/ConseilTek-Tektons/roster/actions/workflows/codeql.yml/badge.svg)](https://github.com/ConseilTek-Tektons/roster/actions/workflows/codeql.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-a3ff12)](LICENSE)
 
-Roster is a deployable ConseilTek reference application for hardware inventory, software discovery, title normalization, license positions, contracts, and optimization. It includes an interactive estate dashboard, temporal PostgreSQL history, reconciliation logic, AI-assisted operations, enterprise identity, containers, and validated AWS/Azure infrastructure.
+Reliable asset decisions start with knowing what exists, who uses it, and how that picture changed over time. ConseilTek built Roster to give IT and software-asset teams one place to investigate hardware, normalize discovered software, reconcile licenses, watch contracts, and find practical savings. Its PostgreSQL history keeps the evidence behind each change instead of overwriting yesterday's state.
+
+This repository is the complete working package: an interactive application, protected APIs, temporal migrations, reconciliation logic, tests, enterprise identity configuration, containers, and validated AWS and Azure infrastructure.
 
 ![Roster application architecture](docs/architecture/application-flow.svg)
 
@@ -97,3 +99,7 @@ docs/architecture/       editable SVG architecture diagrams
 ## License
 
 Apache 2.0. See [LICENSE](LICENSE). ConseilTek trademarks and supplied brand artwork remain the property of ConseilTek.
+
+## Ownership and stewardship
+
+Roster is designed, built, and maintained by [ConseilTek](https://conseiltek.com). It is published through the ConseilTek Tektons organization as part of our open engineering portfolio. Questions, responsible security reports, and partnership inquiries can be sent to [support@conseiltek.com](mailto:support@conseiltek.com).
