@@ -46,9 +46,9 @@ const assets: Asset[] = [
 ];
 
 const estateMix = [
-  { name: "Endpoints", value: 1284, color: "#a3ff12" },
-  { name: "Cloud", value: 702, color: "#8b5cf6" },
-  { name: "Servers", value: 231, color: "#39d7d4" },
+  { name: "Endpoints", value: 1284, color: "#222c62" },
+  { name: "Cloud", value: 702, color: "#5262a3" },
+  { name: "Servers", value: 231, color: "#4c6c7a" },
   { name: "Network", value: 183, color: "#555" },
 ];
 
@@ -108,7 +108,7 @@ export function ProductDashboard({ roles }: { roles: string[] }) {
         </section>
 
         <div className="side-stack">
-          <section className="surface"><header className="surface-header"><div><h2>Estate mix</h2><p>2,400 active assets</p></div><HardDrive size={18} /></header><div className="estate-chart"><ResponsiveContainer width="100%" height="100%"><PieChart><Pie data={estateMix} dataKey="value" nameKey="name" innerRadius={48} outerRadius={72} paddingAngle={3}>{estateMix.map((entry) => <Cell fill={entry.color} key={entry.name} />)}</Pie><Tooltip contentStyle={{ background: "#171717", border: "1px solid #333", borderRadius: 6, fontSize: 10 }} /></PieChart></ResponsiveContainer><div className="estate-total"><b>2.4k</b><span>assets</span></div></div><div className="estate-legend">{estateMix.map((entry) => <span key={entry.name}><i style={{ background: entry.color }} />{entry.name}<b>{entry.value}</b></span>)}</div></section>
+          <section className="surface"><header className="surface-header"><div><h2>Estate mix</h2><p>2,400 active assets</p></div><HardDrive size={18} /></header><div className="estate-chart"><ResponsiveContainer width="100%" height="100%"><PieChart><Pie data={estateMix} dataKey="value" nameKey="name" innerRadius={48} outerRadius={72} paddingAngle={3}>{estateMix.map((entry) => <Cell fill={entry.color} key={entry.name} />)}</Pie><Tooltip contentStyle={{ background: "#ffffff", border: "1px solid #d8d9d4", borderRadius: 6, fontSize: 10 }} /></PieChart></ResponsiveContainer><div className="estate-total"><b>2.4k</b><span>assets</span></div></div><div className="estate-legend">{estateMix.map((entry) => <span key={entry.name}><i style={{ background: entry.color }} />{entry.name}<b>{entry.value}</b></span>)}</div></section>
           <section className="insight-card"><span className="insight-icon"><Sparkles size={18} /></span><div><p className="mono-label">AI OPPORTUNITY</p><h3>38 Figma seats look reclaimable.</h3><p>No sign-in or product activity for 90 days. Estimated annual value is $7,752 using the recorded contract price.</p><button>Open evidence set <ArrowUpRight size={14} /></button></div></section>
         </div>
       </div>

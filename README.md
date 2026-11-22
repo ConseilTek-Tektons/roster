@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/brand/mark-light.png" alt="ConseilTek" width="120" />
+  <img src="public/brand/logo.png" alt="ConseilTek" width="180" />
   <h1>Roster</h1>
   <p><strong>IT asset, software, license, and contract intelligence in one system.</strong></p>
   <p>Enterprise SSO · feature-level RBAC · PostgreSQL history · grounded AI · AWS and Azure infrastructure as code</p>
@@ -7,7 +7,7 @@
 
 [![CI](https://github.com/ConseilTek-Tektons/roster/actions/workflows/ci.yml/badge.svg)](https://github.com/ConseilTek-Tektons/roster/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/ConseilTek-Tektons/roster/actions/workflows/codeql.yml/badge.svg)](https://github.com/ConseilTek-Tektons/roster/actions/workflows/codeql.yml)
-[![License](https://img.shields.io/badge/license-Apache--2.0-a3ff12)](LICENSE)
+[![License](https://img.shields.io/badge/license-Apache--2.0-222c62)](LICENSE)
 
 Reliable asset decisions start with knowing what exists, who uses it, and how that picture changed over time. ConseilTek built Roster to give IT and software-asset teams one place to investigate hardware, normalize discovered software, reconcile licenses, watch contracts, and find practical savings. Its PostgreSQL history keeps the evidence behind each change instead of overwriting yesterday's state.
 
